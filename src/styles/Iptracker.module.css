@@ -1,0 +1,87 @@
+.parent{
+    background-image: url(../images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    height: 350px;
+}
+.tracker{
+    padding: 1.5rem  ;
+    text-align: center;
+}
+.tracker input{
+    padding: 0.7rem;
+    width: 35%;
+    margin: 1rem 0;
+    border: none;
+}
+.tracker h1{
+    color: white;
+    font-size: 28px;
+}
+.tracker button{
+    background-color: black;
+    padding: 0.7rem 1rem;
+    border:none;
+}
+.result{ 
+    position: relative;
+    z-index: 10;
+    min-height: 85px;
+    width: 65%;
+    background-color: white;
+}
+.result div{
+    border-left:rgb(210, 206, 206) 1px solid;
+}
+.result p{
+    margin-bottom: 0.5rem;
+    color: gray;
+}
+.result h3{
+    font-size: 1.3rem;
+}
+.map{
+    position: relative;
+    z-index: 1;
+    bottom: 3rem;
+}
+/*media query ///////////////////////////////////////////////////////////////////////////*/
+@media(max-width:1080px){
+    .result{
+        width: 75%;
+    }
+    .result h3{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:1000px){
+    .result{
+        width: 80%;
+    }
+    .result h3{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width:775px){
+    .result div{
+        width: 95%;
+        border: none;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 0.7rem;
+    }
+    .result div:first-child{
+        padding-left: 1.5rem !important;
+    }
+    .tracker input{
+        width: 80%;
+    }
+    .map{
+        bottom: 12rem;
+    }
+}
+@media(max-width:285px){
+    .map{
+        bottom: 14rem;
+    }
+}
